@@ -20,30 +20,41 @@
 
             //Console.WriteLine($"В Фаренгейтах: {t.Fahrenheit}");
 
-            Gun g = new Gun(10, 30);
+            //Gun g = new Gun(10, 30);
 
-            g.Shoot();
-            Console.WriteLine("Патронов в обойме - " + g.AmmoCount);
+            //g.Shoot();
+            //Console.WriteLine("Патронов в обойме - " + g.AmmoCount);
 
-            g.Shoot();
-            g.Shoot();
-            g.Shoot();
-            g.Shoot();
-            g.Shoot();
-            g.Shoot();
-            g.Shoot();
-            g.Shoot();
-            Console.WriteLine("Патронов в обойме - " + g.AmmoCount);
+            //g.Shoot();
+            //g.Shoot();
+            //g.Shoot();
+            //g.Shoot();
+            //g.Shoot();
+            //g.Shoot();
+            //g.Shoot();
+            //g.Shoot();
+            //Console.WriteLine("Патронов в обойме - " + g.AmmoCount);
 
-            g.Shoot();
-            Console.WriteLine("Патронов в обойме - " + g.AmmoCount);
-            g.Shoot();
-            g.Shoot();
-            g.Shoot();
-            g.Reload();
-            Console.WriteLine("Патронов в обойме - " + g.AmmoCount);
-            g.Shoot();
-            g.Shoot();
+            //g.Shoot();
+            //Console.WriteLine("Патронов в обойме - " + g.AmmoCount);
+            //g.Shoot();
+            //g.Shoot();
+            //g.Shoot();
+            //g.Reload();
+            //Console.WriteLine("Патронов в обойме - " + g.AmmoCount);
+            //g.Shoot();
+            //g.Shoot();
+
+            List<Book> booksList = new List<Book>();
+
+            booksList.Add(new Book("Властелин Колец", "Толкин"));
+            booksList.Add(new Book("Метро 2033", "Глуховский"));
+
+            foreach (Book book in booksList)
+            {
+                Console.WriteLine(book.Title + " || " + book.Author);
+            }
+
         }
     }
 }
