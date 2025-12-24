@@ -75,13 +75,21 @@ namespace CSharp_OOP_Practice
             //    animal.Voice();
             //}
 
-            Hero h = new Hero();
+            //Hero h = new Hero();
 
-            //h.Attack();
-            //h.Attack("Меч");
-            //h.Attack("Огонь", "пиво");
+            ////h.Attack();
+            ////h.Attack("Меч");
+            ////h.Attack("Огонь", "пиво");
 
-            h.Hit(50);
+            //h.Hit(50);
+
+            PiggyBank pb = new PiggyBank();
+
+            pb.AddMoney(10000);
+            pb.AddMoney(1000);
+            pb.AddMoney(100);
+
+            pb.BreakPeaggy();
         }
     }
 }
