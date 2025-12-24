@@ -45,16 +45,33 @@
             //g.Shoot();
             //g.Shoot();
 
-            List<Book> booksList = new List<Book>();
+            //List<Book> booksList = new List<Book>();
 
-            booksList.Add(new Book("Властелин Колец", "Толкин"));
-            booksList.Add(new Book("Метро 2033", "Глуховский"));
+            //booksList.Add(new Book("Властелин Колец", "Толкин"));
+            //booksList.Add(new Book("Метро 2033", "Глуховский"));
 
-            foreach (Book book in booksList)
+            //foreach (Book book in booksList)
+            //{
+            //    Console.WriteLine(book.Title + " || " + book.Author);
+            //}
+
+            //Console.WriteLine(MathUtils.Add(10, 20));
+
+            List<Animal> zoo = new List<Animal>
             {
-                Console.WriteLine(book.Title + " || " + book.Author);
-            }
+                new Animal(),
+                new Dog(),
+                new Cat(),
+                new Tiger()
+            };
 
+            Console.WriteLine("Звуки");
+
+            foreach (Animal animal in zoo)
+            {
+                Console.Write("Зверь кричит: ");
+                animal.Voice();
+            }
         }
     }
 }
