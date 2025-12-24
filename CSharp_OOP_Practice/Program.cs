@@ -1,4 +1,6 @@
-﻿namespace CSharp_OOP_Practice
+﻿using System.Net.Mail;
+
+namespace CSharp_OOP_Practice
 {
     internal class Program
     {
@@ -57,21 +59,27 @@
 
             //Console.WriteLine(MathUtils.Add(10, 20));
 
-            List<Animal> zoo = new List<Animal>
-            {
-                new Animal(),
-                new Dog(),
-                new Cat(),
-                new Tiger()
-            };
+            //List<Animal> zoo = new List<Animal>
+            //{
+            //    new Animal(),
+            //    new Dog(),
+            //    new Cat(),
+            //    new Tiger()
+            //};
 
-            Console.WriteLine("Звуки");
+            //Console.WriteLine("Звуки");
 
-            foreach (Animal animal in zoo)
-            {
-                Console.Write("Зверь кричит: ");
-                animal.Voice();
-            }
+            //foreach (Animal animal in zoo)
+            //{
+            //    Console.Write("Зверь кричит: ");
+            //    animal.Voice();
+            //}
+
+            Hero h = new Hero();
+
+            h.Attack();
+            h.Attack("Меч");
+            h.Attack("Огонь", "пиво");
         }
     }
 }
