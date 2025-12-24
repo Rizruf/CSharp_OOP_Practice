@@ -8,6 +8,24 @@ namespace CSharp_OOP_Practice
 {
     internal class Hero
     {
+        private int _health = 100;
+
+        public void Hit(int dmg)
+        {
+            _health -= dmg;
+
+            if (_health <= 0)
+            {
+                _health = 0;
+                Console.WriteLine("Убило");
+            }
+            else
+            {
+                Console.WriteLine($"Получен урон: {dmg}. Осталось HP: {_health}");
+            }
+        }
+
+
         public void Attack()
         {
             Console.WriteLine("Удар кулаком");

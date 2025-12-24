@@ -77,9 +77,11 @@ namespace CSharp_OOP_Practice
 
             Hero h = new Hero();
 
-            h.Attack();
-            h.Attack("Меч");
-            h.Attack("Огонь", "пиво");
+            //h.Attack();
+            //h.Attack("Меч");
+            //h.Attack("Огонь", "пиво");
+
+            h.Hit(50);
         }
     }
 }
