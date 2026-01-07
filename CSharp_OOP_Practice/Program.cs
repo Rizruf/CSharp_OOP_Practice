@@ -83,13 +83,13 @@ namespace CSharp_OOP_Practice
 
             //h.Hit(50);
 
-            PiggyBank pb = new PiggyBank();
+            //PiggyBank pb = new PiggyBank();
 
-            pb.AddMoney(10000);
-            pb.AddMoney(1000);
-            pb.AddMoney(100);
+            //pb.AddMoney(10000);
+            //pb.AddMoney(1000);
+            //pb.AddMoney(100);
 
-            pb.BreakPeaggy();
+            //pb.BreakPeaggy();
         }
     }
 }
